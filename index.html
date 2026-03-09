@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum Minggu 3 - Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ── NAVBAR ─────────────────────── -->
+    <nav class="navbar">
+     <div class="navbar__logo">
+        <span class="logo-icon">&#3858;</span>
+        <span class="logo-text">Firman</span>
+      </div>
+
+      <ul class="navbar__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="navbar__cta">
+        <a href="#" class="btn-primary">Hire Me</a>
+      </div>
+    </nav>
+    <!-- ── HERO SECTION ────────────────── -->
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <span class="hero__badge">Available for Work</span>
+        <h1 class="hero__title">
+          <span class="highlight">Firman</span>
+          <br />
+          Web Developer
+        </h1>
+
+        <div class="hero__actions">
+          <a href="#portfolio" class="btn-primary">Lihat Portfolio</a>
+          <a href="#contact" class="btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+    </section>
+    <!-- BIODATA / ABOUT ME SECTION BARU DI SINI -->
+    <section class="about-me" id="about-me">
+      <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+
+        <div class="about-container" style="display: flex; justify-content: center; align-items: flex-start; gap: 20px;">
+    <ul>
+          <div class="about-photo">
+            <img src="foto profil.jpg" alt="foto profil" class="profile-img" />
+          </div>
+
+            <ul class="bio-list">
+              <li>
+                <strong>Nama Lengkap</strong>
+                : Firman
+              </li>
+              <li>
+                <strong>Umur</strong>
+                : 20 tahun
+              </li>
+              <li>
+                <strong>Lokasi</strong>
+                : Medan, Indonesia
+              </li>
+              <li>
+                <strong>Email</strong>
+                : sschooldae4@gmail.com
+              </li>
+              <li>
+                <strong>Hobi</strong>
+                : main bola, main game
+              </li>
+            </ul>
+
+           <a href="#contact" class="btn-primary">Mari Ngobrol</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ── SKILLS SECTION ──────────────── -->
+    <section class="skills" id="about">
+      <div class="container">
+        <h2 class="section-title">Keahlian Saya</h2>
+        <p class="section-subtitle">Teknologi yang saya kuasai</p>
+
+        <div class="skills__grid">
+          <div class="skill-card">
+            <div class="skill-card__icon">&#128195;</div>
+            <h3>HTML5</h3>
+            <p>Semantic markup, aksesibilitas, dan struktur dokumen yang baik.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">&#127912;</div>
+            <h3>CSS3</h3>
+            <p>Flexbox, Grid, animasi, dan responsive design untuk semua layar.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">&#9889;</div>
+            <h3>JavaScript</h3>
+            <p>DOM manipulation, Fetch API, dan logika interaktif modern.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">&#128279;</div>
+            <h3>Git & GitHub</h3>
+            <p>Version control, branching, dan kolaborasi tim secara profesional.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">&#9881;</div>
+            <h3>React</h3>
+            <p>Component-based development dengan hooks dan state management.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">&#128640;</div>
+            <h3>Performance</h3>
+            <p>Optimasi loading, image compression, dan Core Web Vitals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ── CONTACT SECTION ────────────────── -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Hubungi Saya</h2>
+
+        <div class="contact-container">
+          <!-- Info WhatsApp utama -->
+          <div class="contact-info">
+            <div class="whatsapp-big">
+              <a
+                href="https://wa.me/6282268122732?text=Halo%20firman"
+                target="_blank"
+                class="btn-whatsapp"
+              >
+                <span class="whatsapp-icon">📱</span>
+                Chat via WhatsApp
+              </a>
+              <p class="whatsapp-number">Nomor: +62 853-9385-6746</p>
+            </div>
+
+            <!-- Info tambahan opsional -->
+            <ul class="contact-list">
+              <li>
+                <strong>Lokasi:</strong>
+                Medan, Sumatera Utara
+              </li>
+              <li>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/ifdal-sofyan" target="_blank">
+                  github.com/ifdal-sofyan
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Floating WhatsApp button (muncul di pojok kanan bawah, selalu ada) -->
+          <a
+            href="https://wa.me/6281234567890?text=Halo%20bro,%20ada%20yang%20bisa%20saya%20bantu?"
+            class="whatsapp-float"
+            target="_blank"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+              alt="WhatsApp"
+              width="60"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ── FOOTER ──────────────────────── -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <span class="footer__brand">&#9670; IfdalStudio</span>
+          <p class="footer__copy">
+            &copy; 2025 Muhammad Ifdal Sofyan. Dibuat dengan HTML & CSS murni.
+          </p>
+          <div class="footer__links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
